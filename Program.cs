@@ -35,7 +35,7 @@ while (true)
         string content = await response.Content.ReadAsStringAsync();
         WeatherForecast forecast = JsonConvert.DeserializeObject<WeatherForecast>(content);
         Message message = await bot.SendTextMessageAsync(TGid, $"Доброе утро, температура воздуха в СПб сейчас{forecast.fact.Temp}");
-        Thread.Sleep(86400000);
+        Thread.Sleep(60000);
     }
 }
 

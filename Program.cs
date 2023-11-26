@@ -10,16 +10,22 @@ string KeyReader(string pathToFile)
 }
 string pathToYaKey = "G:\\Local repo\\SensetiveData\\YaAPI.env";
 string YaKey = KeyReader(pathToYaKey);
+
 string pathToTGtoken = "G:\\Local repo\\SensetiveData\\Token.env";
 string TGtoken = KeyReader(pathToTGtoken);
+
 string pathToTGid = "G:\\Local repo\\SensetiveData\\UserID.env";
 string TGid = KeyReader(pathToTGid);
+
 string pathToCityCooedinates = "G:\\Local repo\\SensetiveData\\lat-lon.env";
 string cityCoordinates = KeyReader(pathToCityCooedinates);
-HttpClient httpClient = new HttpClient();
+
+HttpClient httpClient = new();
 httpClient.DefaultRequestHeaders.Add("X-Yandex-API-Key", YaKey);
+
 var bot = new TelegramBotClient(TGtoken);
 string targetTime = "9:00";
+
 while (true)
 {
     string curTime = DateTime.Now.ToShortTimeString(); 

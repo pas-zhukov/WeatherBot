@@ -19,7 +19,7 @@ string cityCoordinates = KeyReader(pathToCityCooedinates);
 HttpClient httpClient = new HttpClient();
 httpClient.DefaultRequestHeaders.Add("X-Yandex-API-Key", YaKey);
 var bot = new TelegramBotClient(TGtoken);
-string targetTime = "16:32";
+string targetTime = "9:00";
 while (true)
 {
     string curTime = DateTime.Now.ToShortTimeString(); 
@@ -29,10 +29,8 @@ while (true)
         string content = await response.Content.ReadAsStringAsync();
         WeatherForecast forecast = JsonConvert.DeserializeObject<WeatherForecast>(content);
         Message message = await bot.SendTextMessageAsync(TGid, $"Доброе утро, температура воздуха в СПб сейчас{forecast.fact.Temp}");
-        Thread.Sleep(86400000);
+        Thread.Sleep(60000);
     }
 }
-
-
 
 

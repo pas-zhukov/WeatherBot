@@ -19,7 +19,7 @@ string cityCoordinates = KeyReader(pathToCityCooedinates);
 HttpClient httpClient = new HttpClient();
 httpClient.DefaultRequestHeaders.Add("X-Yandex-API-Key", YaKey);
 var bot = new TelegramBotClient(TGtoken);
-string targetTime = "16:32";
+string targetTime = "9:00";
 while (true)
 {
     string curTime = DateTime.Now.ToShortTimeString(); 

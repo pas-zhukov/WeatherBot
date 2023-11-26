@@ -2,6 +2,7 @@
 using Telegram.Bot.Types;
 using WeatherBot;
 using Newtonsoft.Json;
+
 string KeyReader(string pathToFile)
 {
     StreamReader reader = new StreamReader(pathToFile);
@@ -18,7 +19,7 @@ string pathToTGid = "G:\\Local repo\\SensetiveData\\UserID.env";
 string TGid = KeyReader(pathToTGid);
 
 string pathToCityCooedinates = "G:\\Local repo\\SensetiveData\\lat-lon.env";
-string cityCoordinates = KeyReader(pathToCityCooedinates);
+string cityCoordinates = KeyReader(pathToCityCoordinates);
 
 HttpClient httpClient = new();
 httpClient.DefaultRequestHeaders.Add("X-Yandex-API-Key", YaKey);

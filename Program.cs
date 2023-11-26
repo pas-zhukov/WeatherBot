@@ -26,7 +26,7 @@ while (true)
     string curTime = DateTime.Now.ToShortTimeString();
     if (targetTime == curTime)
     {
-        Message message = await bot.SendTextMessageAsync(TGid, $"Здарова, бандиты, {forecast.fact.Temp}, погода нахуй");
+        Message message = await bot.SendTextMessageAsync(TGid, $"Доброе утро, температура воздуха в СПб сейчас{forecast.fact.Temp}");
         Thread.Sleep(86400000);
     }
 }

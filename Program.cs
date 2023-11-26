@@ -18,6 +18,9 @@ string TGtoken = KeyReader(pathToTGtoken);
 string pathToTGid = "G:\\Local repo\\SensetiveData\\UserID.env";
 string TGid = KeyReader(pathToTGid);
 
+string pathToTargetTime = "G:\\Local repo\\SensetiveData\\targetTime.env";
+string targetTime = KeyReader(pathToTargetTime);
+
 string pathToCityCooedinates = "G:\\Local repo\\SensetiveData\\lat-lon.env";
 string cityCoordinates = KeyReader(pathToCityCoordinates);
 
@@ -25,7 +28,6 @@ HttpClient httpClient = new();
 httpClient.DefaultRequestHeaders.Add("X-Yandex-API-Key", YaKey);
 
 var bot = new TelegramBotClient(TGtoken);
-string targetTime = "9:00";
 
 while (true)
 {

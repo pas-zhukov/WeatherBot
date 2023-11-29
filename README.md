@@ -1,5 +1,5 @@
 # WeatherBot
-Программа отправляет сообщение телеграмм-ботом в личные сообщения прогноз погоды в выбранном городе по широте и долготе.
+Программа отправляет сообщение телеграмм-ботом в личные сообщения прогноз погоды в выбранном городе по широте и долготе. Предназначена для работы на Windows 11 x64.
 
 
 ### Подготовка для разработчиков
@@ -9,7 +9,7 @@
 git clone https://github.com/warg5000/WeatherBot.git
 ```
 
-Для работы программы на вашем компьютере должен быть установлен [Visual Studio 2022 community edition](https://visualstudio.microsoft.com/ru/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&passive=false&cid=2030). 
+Для работы программы на вашем компьютере должен быть установлен [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.100-windows-x64-installer). 
 
 Нужно создать и подписаться на своего бота в телеграмме по следующей [инструкции, пункт 1](https://habr.com/ru/articles/262247/).
 
@@ -17,7 +17,7 @@ git clone https://github.com/warg5000/WeatherBot.git
 
 Скачать [папку](https://disk.yandex.ru/d/fsskOySMvD-xUQ) с файлаим конфигурации и поместить её на диске С.
 
-Установить NuGet пакеты Newtonsoft.Json, Telegram.Bot и Telegram.Bots.Extensions.Polling.
+Установить NuGet пакеты Newtonsoft.Json, Telegram.Bot и Telegram.Bots.Extensions.Polling. С помощью команды ``` nuget install Newtonsoft.Json -OutputDirectory packages ``` установить все пакеты.
 
 
 ### Подготовка для пользователей 

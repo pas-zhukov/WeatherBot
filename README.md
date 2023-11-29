@@ -9,26 +9,20 @@
 git clone https://github.com/warg5000/WeatherBot.git
 ```
 
-Для работы программы на вашем компьютере должен быть установлен [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.100-windows-x64-installer). 
+1.Для работы программы на вашем компьютере должен быть установлен [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.100-windows-x64-installer). 
 
-Нужно создать и подписаться на своего бота в телеграмме по следующей [инструкции, пункт 1](https://habr.com/ru/articles/262247/).
+2.Нужно создать и подписаться на своего бота в телеграмме по следующей [инструкции, пункт 1](https://habr.com/ru/articles/262247/).
 
-Записать свои API-ключи, свой TelegramID и широту с долготой(должен быть следующий вид ```lat=59.938676&lon=30.314494```, данный пример соответсвует городу Санкт-Петербург). 
+3.Записать свои API-ключи, свой TelegramID и широту с долготой(должен быть следующий вид ```lat=59.938676&lon=30.314494```, данный пример соответсвует городу Санкт-Петербург). 
 
-Скачать [папку](https://disk.yandex.ru/d/fsskOySMvD-xUQ) с файлаим конфигурации и поместить её на диске С.
+4.Скачать папку ```SensetiveData``` с файлами конфигурации из раздела релизов и поместить её на диске С.
 
-Установить NuGet пакеты Newtonsoft.Json, Telegram.Bot и Telegram.Bots.Extensions.Polling. С помощью команды ``` nuget install Newtonsoft.Json -OutputDirectory packages ``` установить все пакеты.
+5.Установить NuGet пакеты Newtonsoft.Json, Telegram.Bot и Telegram.Bots.Extensions.Polling. С помощью команды ``` nuget install Newtonsoft.Json -OutputDirectory packages ``` установить все пакеты.
 
 
 ### Подготовка для пользователей 
 
-Скачать программу по [ссылке](https://disk.yandex.ru/d/28aPNIXE5yIKIA).
-
-Нужно создать и подписаться на своего бота в телеграмме по следующей [инструкции, пункт 1](https://habr.com/ru/articles/262247/).
-
-Записать свои API-ключи, свой TelegramID и широту с долготой(должен быть следующий вид ```lat=59.938676&lon=30.314494```, данный пример соответсвует городу Санкт-Петербург).
-
-Скачать [папку](https://disk.yandex.ru/d/fsskOySMvD-xUQ) с файлами конфигурации и поместить на диске С.
+Скачать программу из раздела релизы, проследовать пунктам 2-4 из Подготовки для разработчиков.
 
 
 ### Запуск программы

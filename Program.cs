@@ -16,23 +16,27 @@ class Program
     }
     public static async Task Main(string[] args)
     {
-        string pathToYaKey = "C:\\SensetiveData\\YaAPI.env";
+        string pathToYaKey = "SensetiveData\\YaAPI.env";
         string YaKey = KeyReader(pathToYaKey);
 
-        string pathToTGtoken = "C:\\SensetiveData\\Token.env";
+        string pathToTGtoken = "SensetiveData\\Token.env";
         string TGtoken = KeyReader(pathToTGtoken);
 
-        string pathToTGid = "C:\\SensetiveData\\UserID.env";
+        string pathToTGid = "SensetiveData\\UserID.env";
         string TGid = KeyReader(pathToTGid);
 
-        string pathToTargetTime = "C:\\SensetiveData\\targetTime.env";
+        string pathToTargetTime = "SensetiveData\\targetTime.env";
         string targetTime = KeyReader(pathToTargetTime);
 
-        string pathToCityCoordinates = "C:\\SensetiveData\\lat-lon.env";
+        string pathToCityCoordinates = "SensetiveData\\lat-lon.env";
         string cityCoordinates = KeyReader(pathToCityCoordinates);
 
-        string pathToURL = "C:\\SensetiveData\\URL.env";
+        string pathToURL = "SensetiveData\\URL.env";
         string URL = KeyReader(pathToURL);
+
+        Console.WriteLine(YaKey);
+        Console.WriteLine(URL);   
+
 
         HttpClient httpClient = new();
         httpClient.DefaultRequestHeaders.Add("X-Yandex-API-Key", YaKey);

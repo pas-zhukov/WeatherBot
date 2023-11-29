@@ -17,11 +17,10 @@ git clone https://github.com/warg5000/WeatherBot.git
 
 4.Скачать программу из раздела [релизов](https://github.com/warg5000/WeatherBot/releases) и поместить папку ```SensetiveData``` на диске С. В файлы из папки поместить свои данные из пункта 3.
 
-5.Установить NuGet пакеты Newtonsoft.Json, Telegram.Bot и Telegram.Bots.Extensions.Polling. С помощью команды ``` nuget install Newtonsoft.Json -OutputDirectory packages ``` установить все пакеты.
+5.Установить NuGet пакеты c помощью команды ```dotnet add package``` Newtonsoft.Json Telegram.Bot Telegram.Bots.Extensions.Polling.
 
 
-### Подготовка для пользователей 
-
+### Подготовка для пользователей  
 Проследовать пунктам 2-4 из Подготовки для разработчиков. 
 
 ### Запуск программы
